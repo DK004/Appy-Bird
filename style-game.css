@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17, 17, 17);
+    align-content: center;
+}
+
+.game-container{
+    width: 400px;
+    height: 575px;
+    overflow: hidden;
+    position: absolute; 
+}
+
+.sky{
+    background-image: url('bg.jpg');
+    width: 400px;
+    height: 475px;
+    position: absolute;
+    background-size: 400px 600px;
+
+
+}
+
+.ground{
+    background-color: rgb(56, 24, 87);
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 425px;
+    z-index: +1;
+}
+
+.bird{
+    background-image: url('bird.png');
+    position: absolute;
+    height: 53px;
+    width: 52px;
+    background-size: 60px 60px;
+
+}
+
+
+.obstacle{
+    background-image: url('Pipe.png');
+    width: 60px;
+    position: absolute;
+    height: 300px;
+    background-size: 60px 300px;
+}
+
+
+.topObstacle{
+    background-image: url('Pipe.png');
+    width: 60px;
+    transform: rotate(180deg);
+    position: absolute;
+    height: 300px;
+    background-size: 60px 300px;
+}
+
+
+
+
+#score{
+    z-index: +2;
+    position: absolute;
+    color: rgb(187, 118, 255);
+    font-size: 2rem;
+    bottom: 110px;
+    left: 40%;
+}
+
+
+#restart{
+    z-index: +2;
+    position: absolute;
+    color: rgb(222, 189, 255);
+    font-size: 1rem;
+    bottom: 30px;
+    left: 42%;
+    visibility: hidden;
+}
+
+#startAgain{
+    padding: 1rem;
+    color: white;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    background-color:  rgb(56, 24, 87);
+    font-size: 2rem;
+    box-shadow: 0 3px 3px rgb(17, 17, 17);
+}
+
+
+#startAgain:hover{
+    background-color: rgb(103, 46, 161);
+    cursor: pointer;
+}
