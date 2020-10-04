@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateObstable() {
         let obstacleLeft = 500;
-        let randomHeight = Math.random() * 100;
+        let randomHeight = Math.random() * 150;
         let obstacleBottom = randomHeight;
         const topObstacle = document.createElement('div');
         const obstacle = document.createElement('div');
